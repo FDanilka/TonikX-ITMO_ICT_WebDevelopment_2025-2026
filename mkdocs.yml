@@ -22,5 +22,6 @@ plugins:
 
 nav:
   - Главная: index.md
-
+  - LR1: 
+    - Задание 1: Lab1/Task_1.md
 
