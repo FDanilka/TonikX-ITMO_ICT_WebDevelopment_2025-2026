@@ -10,9 +10,7 @@
 
 ### Выполнение
 **server_1.py**
-```
-import socket
-
+```import socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 ```
 В первострочке импортируем socket
@@ -21,9 +19,7 @@ server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 `AF_INET` — семейство адресов IPv4;
 `SOCK_DGRAM` — тип датаграмм (UDP), без установления соединения.
 
-```
-server_socket.bind(('localhost', 1234))
-```
+```server_socket.bind(('localhost', 1234))```
 Биндим хост и порт
 print('Сервер запущен')
 
@@ -37,22 +33,18 @@ print('Сервер запущен')
 `data.decode()` - перевод байт в строку(utf-8) и вывод на сервере
 `send_to(..., address)` - отправка ответа на адрес отправителя
 
-client_1.py
-```
-import socket
+**client_1.py**
 
+```import socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 server_address = ('localhost', 1234)
 ```
 
-```
-client_socket.sendto(b'Hello, server', server_address)
-```
+```client_socket.sendto(b'Hello, server', server_address)```
 Отправка датаграммы на сервер (байты).
 
-```
-data, address = client_socket.recvfrom(1024)
+```data, address = client_socket.recvfrom(1024)
 print(f'{data.decode()}')
 ```
 Получение ответа от сервера

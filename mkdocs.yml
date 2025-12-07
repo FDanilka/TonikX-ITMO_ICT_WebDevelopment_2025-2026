@@ -24,4 +24,11 @@ nav:
   - Главная: index.md
   - LR1: 
     - Задание 1: Lab1/Task_1.md
+    - Задание 2: Lab1/Task_2.md
+    - Задание 3: Lab1/Task_3.md
+    - Задание 4: Lab1/Task_4.md
+    - Задание 5: Lab1/Task_5.md
+  - LR2:
+    - Практическая часть: Lab2/Practice/practice.md
+    - Лабораторная : Lab2/Practice/lab.md
 
