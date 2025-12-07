@@ -9,7 +9,9 @@
 - Реализовать с помощью протокола UDP.
 
 ### Выполнение
+
 **server_1.py**
+
 ```
     import socket
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -51,6 +53,7 @@ print('Сервер запущен')
     data, address = client_socket.recvfrom(1024)
     print(f'{data.decode()}')
 ```
+
 Получение ответа от сервера
 
 #### Результаты
