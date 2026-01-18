@@ -1,0 +1,1561 @@
+<!DOCTYPE html><html lang="ru" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Федоров Даниил">
+      
+      
+      
+        <link rel="prev" href="../../Practice/practice/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Лабораторная - Web-программирование</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#no2" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../../.." title="Web-программирование" class="md-header__button md-logo" aria-label="Web-программирование" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Web-программирование
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Лабораторная
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Web-программирование" class="md-nav__button md-logo" aria-label="Web-программирование" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    Web-программирование
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LR1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LR1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Lab1/Task_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Lab1/Task_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Lab1/Task_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Lab1/Task_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Lab1/Task_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LR2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LR2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Practice/practice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Практическая часть
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Тема: Табло победителей автогонок
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Реализованный функционал
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Реализованный функционал">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Регистрация новых пользователей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Авторизация пользователей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Просмотр автогонок
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Создание и удаление гонок (для администратора)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Просмотр конкретной гонки и регистрация гонщиков
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Редактирование и удаление регистраций гонщиков
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6 Редактирование и удаление регистраций гонщиков">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Удаление регистрации
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Редактирование регистрации
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 Комментарии и отзывы к автогонкам
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 Пагинация комментариев
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9 Таблица результатов гонки (клиентская часть)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Модели данных
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Модели данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 User
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-race" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Race (Автогонка)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-racer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Racer (Участник гонки)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Results (Результаты)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Comments (Комментарии)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Формы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Формы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-userregisterform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 UserRegisterForm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-raceform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 RaceForm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-racercreateform-racerupdateform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 RacerCreateForm / RacerUpdateForm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-commentform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 commentForm
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Маршрутизация (URLs)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Админ-панель Django
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Клиентская часть (templates)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Тема: Табло победителей автогонок
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Реализованный функционал
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Реализованный функционал">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Регистрация новых пользователей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Авторизация пользователей
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Просмотр автогонок
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Создание и удаление гонок (для администратора)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Просмотр конкретной гонки и регистрация гонщиков
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Редактирование и удаление регистраций гонщиков
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6 Редактирование и удаление регистраций гонщиков">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Удаление регистрации
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Редактирование регистрации
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 Комментарии и отзывы к автогонкам
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8 Пагинация комментариев
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9 Таблица результатов гонки (клиентская часть)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Модели данных
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Модели данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 User
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-race" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Race (Автогонка)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-racer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Racer (Участник гонки)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Results (Результаты)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Comments (Комментарии)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Формы
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Формы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-userregisterform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 UserRegisterForm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-raceform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 RaceForm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-racercreateform-racerupdateform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 RacerCreateForm / RacerUpdateForm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-commentform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 commentForm
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Маршрутизация (URLs)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Админ-панель Django
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Клиентская часть (templates)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="no2">Лабораторная работа №2</h1>
+<h2 id="1">1. Тема: Табло победителей автогонок</h2>
+<h2 id="2">2. Реализованный функционал</h2>
+<h3 id="21">2.1 Регистрация новых пользователей</h3>
+<p>Реализована регистрация пользователей через форму <code>UserRegisterForm</code>, основанную на стандартной <code>UserCreationForm</code>.</p>
+<p><strong>Реализация:</strong></p>
+<ul>
+<li>Представление: <code>UserRegisterView</code> (<code>CreateView</code>) в <code>views.py</code></li>
+<li>Форма: <code>UserRegisterForm</code> в <code>forms.py</code></li>
+<li>Шаблон: <code>register.html</code></li>
+<li>URL: <code>/register/</code></li>
+</ul>
+<p><strong>Поля формы:</strong></p>
+<ul>
+<li><code>username</code></li>
+<li><code>first_name</code></li>
+<li><code>last_name</code></li>
+<li><code>password1</code></li>
+<li><code>password2</code></li>
+</ul>
+<h3 id="22">2.2 Авторизация пользователей</h3>
+<p>Реализована форма входа с использованием стандартного механизма Django.</p>
+<p><strong>Реализация:</strong></p>
+<ul>
+<li>Представление: <code>UserLoginView</code> (<code>LoginView</code>) в <code>views.py</code></li>
+<li>Форма: <code>AuthenticationForm</code></li>
+<li>Шаблон: <code>login.html</code></li>
+<li>URL: <code>/login/</code></li>
+</ul>
+<h3 id="23">2.3 Просмотр автогонок</h3>
+<p>Реализован просмотр списка гонок с пагинацией и поиском.</p>
+<p><strong>Реализация:</strong></p>
+<ul>
+<li>Представление: <code>RaceListView</code> (<code>ListView</code>) в <code>views.py</code></li>
+<li>Шаблон: <code>race_list.html</code></li>
+<li>URL: <code>/races/</code></li>
+</ul>
+<p><strong>Функции списка гонок:</strong></p>
+<ul>
+<li>Пагинация по 5 гонок на страницу (<code>paginate_by = 5</code>)</li>
+<li>
+<p>Поиск по параметру <code>q</code>:</p>
+</li>
+<li>
+<p>по названию гонки (<code>name</code>)</p>
+</li>
+<li>по месту (<code>location</code>)</li>
+<li>по дате (<code>date</code>)</li>
+</ul>
+<p><strong>Поиск реализован через Django ORM:</strong></p>
+<ul>
+<li><code>Q(name__icontains=q)</code></li>
+<li><code>Q(location__icontains=q)</code></li>
+<li><code>Q(date__icontains=q)</code></li>
+</ul>
+<h3 id="24">2.4 Создание и удаление гонок (для администратора)</h3>
+<p>Администратор (superuser) может добавлять и удалять гонки.</p>
+<p><strong>Создание гонки:</strong></p>
+<ul>
+<li>Представление: <code>RaceCreateView</code> (<code>CreateView</code>)</li>
+<li>Форма: <code>RaceForm</code></li>
+<li>Шаблон: <code>race_form.html</code></li>
+<li>URL: <code>/race/create/</code></li>
+</ul>
+<p><strong>Удаление гонки:</strong></p>
+<ul>
+<li>Представление: <code>RaceDeleteView</code> (<code>DeleteView</code>)</li>
+<li>URL: <code>/race/&lt;int:pk&gt;/delete/</code></li>
+</ul>
+<p><strong>Кнопки добавления/удаления отображаются только для суперпользователя</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    {% if user.is_superuser %}
+</span></code></pre></div>
+<h3 id="25">2.5 Просмотр конкретной гонки и регистрация гонщиков</h3>
+<p>Реализована детальная страница гонки, где отображается:</p>
+<ul>
+<li>информация о гонке (название, дата, место, статус)</li>
+<li>таблица результатов (время заезда + победитель)</li>
+<li>список участников (ФИО, команда, автомобиль, опыт, класс)</li>
+<li>форма регистрации участника (если доступна)</li>
+<li>комментарии и форма комментариев</li>
+</ul>
+<p><strong>Реализация:</strong></p>
+<ul>
+<li>Представление: <code>RaceDetailView</code> (<code>TemplateView</code>)</li>
+<li>Шаблон: <code>race_detail.html</code></li>
+<li>URL: <code>/race/&lt;int:pk&gt;/</code></li>
+</ul>
+<h3 id="26">2.6 Редактирование и удаление регистраций гонщиков</h3>
+<p>Пользователь может редактировать и удалять только свои регистрации.</p>
+<h4 id="_1">Удаление регистрации</h4>
+<p>Реализовано через <code>RacerDeleteView</code>.</p>
+<ul>
+<li>если пользователь <code>superuser</code>, то он может удалить любую регистрацию</li>
+</ul>
+<p><strong>URL:</strong></p>
+<ul>
+<li><code>/racer/&lt;int:pk&gt;/delete/</code></li>
+</ul>
+<h4 id="_2">Редактирование регистрации</h4>
+<p>Реализовано через <code>RacerUpdateView</code>.</p>
+<ul>
+<li>если пользователь <code>superuser</code>, может редактировать любую регистрацию, иначе редактируется только регистрация текущего пользователя</li>
+<li>после сохранения выполняется возврат на страницу гонки</li>
+</ul>
+<p><strong>Реализация:</strong></p>
+<ul>
+<li>Представление: <code>RacerUpdateView</code> (<code>UpdateView</code>)</li>
+<li>Форма: <code>RacerUpdateForm</code></li>
+<li>Шаблон: <code>racer_update.html</code></li>
+<li>URL: <code>/racer/&lt;int:pk&gt;/update/</code></li>
+</ul>
+<h3 id="27">2.7 Комментарии и отзывы к автогонкам</h3>
+<p>Реализовано добавление комментариев к гонке, доступное только авторизованным пользователям.</p>
+<p>Сохраняется:</p>
+<ul>
+<li>текст комментария (<code>comment</code>)</li>
+<li>тип комментария (<code>comment_type</code>)</li>
+<li>рейтинг (<code>rating</code>, 1–10)</li>
+<li>пользователь (<code>user</code>)</li>
+<li>гонка (<code>race</code>)</li>
+</ul>
+<p><strong>Реализация:</strong></p>
+<ul>
+<li>Модель: <code>Comments</code></li>
+<li>Форма: <code>commentForm</code></li>
+<li>Обработка выполняется в <code>RaceDetailView.post()</code> при наличии <code>send_comment</code> в <code>POST</code></li>
+</ul>
+<p><strong>Типы комментариев:</strong></p>
+<ul>
+<li>сотрудничество</li>
+<li>гонки</li>
+<li>иное</li>
+</ul>
+<p><strong>Рейтинг:</strong></p>
+<ul>
+<li>
+<p>выбор от 1 до 10 (выпадающий список)</p>
+</li>
+<li>
+<p>реализована защита от дублирования комментариев (одинаковый текст от одного пользователя к одной гонке)</p>
+</li>
+</ul>
+<h3 id="28">2.8 Пагинация комментариев</h3>
+<p>Комментарии выводятся постранично по 5 на страницу.</p>
+<p><strong>Реализация:</strong></p>
+<ul>
+<li><code>Paginator(comments, 5)</code></li>
+<li>обработка <code>PageNotAnInteger</code>, <code>EmptyPage</code></li>
+</ul>
+<p>Отображение страниц реализовано в шаблоне <code>race_detail.html</code>.</p>
+<h3 id="29">2.9 Таблица результатов гонки (клиентская часть)</h3>
+<p>В клиентской части реализована таблица результатов на странице гонки:</p>
+<p><strong>Колонки:</strong></p>
+<ul>
+<li>Время заезда</li>
+<li>Победитель</li>
+</ul>
+<p>Данные берутся из:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    Results.objects.filter(race=race)
+</span></code></pre></div>
+<h2 id="3">3. Модели данных</h2>
+<h3 id="31-user">3.1 User</h3>
+<p>Кастомная модель пользователя.</p>
+<p><strong>Файл:</strong> <code>models.py</code>
+<strong>Наследование:</strong> <code>AbstractUser</code></p>
+<h3 id="32-race">3.2 Race (Автогонка)</h3>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>name</code> - название</li>
+<li><code>date</code> - дата/время гонки (<code>DateTimeField</code>)</li>
+<li><code>location</code> - место проведения</li>
+<li><code>has_occurred</code> - флаг завершения гонки</li>
+</ul>
+<h3 id="33-racer">3.3 Racer (Участник гонки)</h3>
+<p>Хранит информацию об участнике гонки.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>user</code> - пользователь</li>
+<li><code>race</code> - гонка (<code>related_name="racers"</code>)</li>
+<li><code>full_name</code> - ФИО</li>
+<li><code>team_name</code> - команда</li>
+<li><code>car_description</code> - описание автомобиля</li>
+<li><code>experience</code> - опыт</li>
+<li><code>racer_class</code> - класс участника</li>
+</ul>
+<p><strong>Ограничение:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>    unique_together = ('user', 'race')
+</span></code></pre></div>
+<p>Один пользователь может зарегистрироваться на гонку только один раз.</p>
+<h3 id="34-results">3.4 Results (Результаты)</h3>
+<p>Хранит результаты гонки и победителя.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>race</code> - гонка (<code>related_name="results"</code>)</li>
+<li><code>race_time</code> - время заезда (<code>DurationField</code>)</li>
+<li><code>winner</code> - победитель (ForeignKey на <code>Racer</code>)</li>
+</ul>
+<p><strong>Особенность:</strong>
+При сохранении результата гонка автоматически помечается как прошедшая:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>    if not self.race.has_occurred:
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>        self.race.has_occurred = True
+</span></code></pre></div>
+<h3 id="35-comments">3.5 Comments (Комментарии)</h3>
+<p>Хранит комментарии к гонкам.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>user</code></li>
+<li><code>race</code> (<code>related_name="comments"</code>)</li>
+<li><code>comment</code></li>
+<li><code>comment_type</code></li>
+<li><code>rating</code></li>
+</ul>
+<h2 id="4">4. Формы</h2>
+<h3 id="41-userregisterform">4.1 UserRegisterForm</h3>
+<p>Форма регистрации пользователя (на базе <code>UserCreationForm</code>).</p>
+<h3 id="42-raceform">4.2 RaceForm</h3>
+<p>Форма создания гонки.</p>
+<p>Поля:</p>
+<ul>
+<li><code>name</code></li>
+<li><code>date</code></li>
+<li><code>location</code></li>
+<li><code>has_occurred</code></li>
+</ul>
+<h3 id="43-racercreateform-racerupdateform">4.3 RacerCreateForm / RacerUpdateForm</h3>
+<p>Формы создания и редактирования участника гонки.</p>
+<p>Поля:</p>
+<ul>
+<li><code>full_name</code></li>
+<li><code>team_name</code></li>
+<li><code>car_description</code></li>
+<li><code>experience</code></li>
+<li><code>racer_class</code></li>
+</ul>
+<h3 id="44-commentform">4.4 commentForm</h3>
+<p>Форма комментария к гонке.</p>
+<p>Поля:</p>
+<ul>
+<li><code>comment</code> (Textarea)</li>
+<li><code>rating</code> (1-10)</li>
+<li><code>comment_type</code> (выбор типа)</li>
+</ul>
+<h2 id="5-urls">5. Маршрутизация (URLs)</h2>
+<p>Основные маршруты:</p>
+<ul>
+<li><code>/</code> - перенаправление (<code>hello_function</code>)</li>
+<li><code>/Hello/</code> - приветственная страница</li>
+<li><code>/login/</code> - вход</li>
+<li><code>/register/</code> - регистрация</li>
+<li><code>/races/</code> - список гонок</li>
+<li><code>/race/create/</code> - создание гонки</li>
+<li><code>/race/&lt;pk&gt;/</code> - страница гонки</li>
+<li><code>/race/&lt;pk&gt;/delete/</code> - удаление гонки</li>
+<li><code>/racer/&lt;pk&gt;/update/</code> - редактирование регистрации</li>
+<li><code>/racer/&lt;pk&gt;/delete/</code> - удаление регистрации</li>
+</ul>
+<h2 id="6-django">6. Админ-панель Django</h2>
+<p>Реализована регистрация моделей в <code>admin.py</code>.</p>
+<p>Зарегистрированы:</p>
+<ul>
+<li><code>Race</code></li>
+<li><code>Racer</code></li>
+<li><code>User</code></li>
+<li><code>Results</code></li>
+<li><code>Comments</code></li>
+</ul>
+<p>Это позволяет администратору управлять гонками, участниками, результатами и комментариями через стандартную панель <code>/admin/</code>.</p>
+<h2 id="7-templates">7. Клиентская часть (templates)</h2>
+<p>Используется Bootstrap для оформления интерфейса.</p>
+<p>Основные шаблоны:</p>
+<ul>
+<li><code>hello.html</code> - стартовая страница</li>
+<li><code>login.html</code> - вход</li>
+<li><code>register.html</code> - регистрация</li>
+<li><code>race_list.html</code> - список гонок + поиск + пагинация</li>
+<li><code>race_detail.html</code> - гонка + участники + результаты + комментарии</li>
+<li><code>race_form.html</code> - добавление гонки</li>
+<li><code>racer_update.html</code> - редактирование регистрации</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
